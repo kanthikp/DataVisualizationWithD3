@@ -1,0 +1,5 @@
+<div class="container-fluid">
+    <select-date-range (onDateRangeSelected)="onDateRangeSelected($event)" (onChartSelected)="onChartSelected($event)"></select-date-range>
+    <render-line-chart [hidden]="!showLineChart" [(startDate)]="startDate" [(endDate)]="endDate"></render-line-chart>
+    <render-bubble-chart [hidden]="!showBubbleChart" [(startDate)]="startDate" [(endDate)]="endDate"></render-bubble-chart>
+</div>

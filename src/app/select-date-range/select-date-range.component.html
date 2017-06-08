@@ -1,0 +1,21 @@
+<div class="panel panel-default">
+  <div class="panel-heading">Select Date Range</div>
+  <div class="panel-body">
+    <div class="form-group">
+
+      <label for="startDate">From:</label>
+      <input id="startDate" type="date" [(ngModel)]="startDate" (change)="validateDate()">
+      <label for="endDate">To:</label>
+      <input id="endDate" type="date" [(ngModel)]="endDate" (change)="validateDate()">
+
+      <div>
+        <label for="vType">Chart Type:</label>
+        <select name="vType" id="vType" [(ngModel)]="selectedChart" (change)="changeChart()">
+                <option value="lineChart" >Line Chart</option>
+                <option value="bubbleChart">Bubble Chart</option>
+            </select>
+      </div>
+
+    </div>
+  </div>
+</div>

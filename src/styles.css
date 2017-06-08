@@ -1,0 +1,89 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+.axis { font: 14px sans-serif; }
+
+path.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+.grid line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+.area {
+  fill: lightsteelblue;
+}
+.dot {
+        stroke: steelblue;
+    
+  fill: white;
+}
+
+
+.ticks {
+  font: 10px sans-serif;
+}
+
+.track,
+.track-inset,
+.track-overlay {
+  stroke-linecap: round;
+}
+
+.track {
+  stroke: #000;
+  stroke-opacity: 0.3;
+  stroke-width: 10px;
+}
+
+.track-inset {
+  stroke: #ddd;
+  stroke-width: 8px;
+}
+
+.track-overlay {
+  pointer-events: stroke;
+  stroke-width: 50px;
+  stroke: transparent;
+  cursor: crosshair;
+}
+
+.handle {
+  fill: #fff;
+  stroke: #000;
+  stroke-opacity: 0.5;
+  stroke-width: 1.25px;
+}
+
+.solid{
+   stroke:solid;
+}
+
+.dashed{
+   stroke-dasharray: 5,5; 
+}
+
+.circleLabel{
+  font:14px sans-serif bold;
+  text-anchor:middle;
+
+}
+
+.area {
+  fill: steelblue;
+  clip-path: url(#clip);
+}
+
+.zoom {
+  cursor: move;
+  fill: none;
+  pointer-events: all;
+}

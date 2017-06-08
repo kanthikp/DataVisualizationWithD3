@@ -1,0 +1,8 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">Line Chart</div>
+
+    <div class="panel-body">
+    <div *ngIf="saleDataForCharts==undefined||saleDataForCharts.length <= 0">No data to show for the selected date range</div>
+        <svg id="lineSVG" width="900" height="500"></svg>
+    </div>
+</div>
